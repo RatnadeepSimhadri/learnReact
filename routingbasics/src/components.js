@@ -1,20 +1,20 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-export function Home(props){
+export function Home(){
     return (
         <div>
-            Home Page
+            Home
         </div>
     );
 }
 
-export function About(props){
+export function About(){
     return (<div>
-        About Page
+        About
     </div>);
 }
 
-export function NavBar(props){
+export function NavBar(){
     return (
         <div>
         <Link to={'/Home'}> Home </Link>
