@@ -1,3 +1,6 @@
 [submodule "jetsetter"]
 	path = jetsetter
 	url = https://github.com/RatnadeepSimhadri/jetsetter.git
+[submodule "higherOrderComponents/basic-counter"]
+	path = higherOrderComponents/basic-counter
+	url = https://github.com/stevekinney/basic-counter
