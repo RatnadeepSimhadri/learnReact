@@ -1,0 +1,3 @@
+[submodule "jetsetter"]
+	path = jetsetter
+	url = https://github.com/RatnadeepSimhadri/jetsetter.git
