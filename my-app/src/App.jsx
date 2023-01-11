@@ -1,6 +1,7 @@
 import './App.css';
 import MyButton from './Button';
 import { useState } from "react";
+import Picture from './Picture';
 
 const user = {
   name: 'Ratnadeep Simhadri',
@@ -13,6 +14,7 @@ const products = [
   { title: 'Football', id: 2 },
   { title: 'Soccer', id: 3 },
 ];
+
 
 function App() {
   const [clicks, setClicks] = useState(0)
@@ -29,13 +31,7 @@ function App() {
   return (
     <div className="App">
        <h1>{user.name}</h1>
-       <img src={user.imageUrl} alt="aardy"
-       className='avatar'
-        style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }}
-       ></img>
+        <Picture user={user}></Picture>
         <br></br>
         <MyButton clicks = {clicks} handleClick = {handleClick}/>
         <MyButton clicks = {clicks} handleClick = {handleClick}/>
