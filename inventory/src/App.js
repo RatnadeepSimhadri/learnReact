@@ -23,14 +23,26 @@ const FilterableProductTable = ({products}) => {
 
   return(
     <>
-    <SearchBar/>
+    <SearchBar />
+    <br/>
     <ProductTable groupedProducts={groupedProducts} />
     </>
   );
 }
 
 const SearchBar = () => {
-
+  return (
+    <form className="center-align">
+      <input type="text" placeholder="Search..." />
+      <br/>
+      <br/>
+      <label>
+        <input type="checkbox"/>
+        {' '}
+        Only show products in stock
+      </label>
+    </form>
+  )
 }
 
 const ProductTable = ({groupedProducts}) => {
@@ -84,7 +96,7 @@ const ProductRow = ({product}) => {
 const App = () => {
   return(
     <div className="App">
-    <h1 className="center-align">Invetory List</h1>
+    <h1 className="center-align">Inventory List</h1>
     <FilterableProductTable products = {PRODUCTS} />
     </div>
   );
